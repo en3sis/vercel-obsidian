@@ -8,7 +8,7 @@ A clean, modern Obsidian theme inspired by Vercel's design system with dark and 
 Clone this repository into your Obsidian vault's `.obsidian/themes` directory.
 
 ```bash
-git clone git@github.com:en3sis/vercel-obsidian.git "Vercel Obsidian"
+git clone git@github.com:en3sis/vercel-obsidian.git "Vercel Geist"
 ```
 
 Then, select the theme in Obsidian's settings.
