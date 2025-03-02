@@ -1,17 +1,17 @@
-# Vercel-Obsidian
+# Vercel-Geist
 
-A clean, modern Obsidian theme inspired by Vercel's design system with dark and light modes
+A clean, modern Geist theme inspired by Vercel's design system with dark and light modes
 
-![Vercel Obsidian Theme](/assets/vercel-obsidian.png)
+![Vercel Geist Theme](/assets/vercel-obsidian.png)
 
 ## Installation
-Clone this repository into your Obsidian vault's `.obsidian/themes` directory.
+Clone this repository into your Geist vault's `.obsidian/themes` directory.
 
 ```bash
 git clone git@github.com:en3sis/vercel-obsidian.git "Vercel Geist"
 ```
 
-Then, select the theme in Obsidian's settings.
+Then, select the theme in Geist's settings.
 
 
 ## Resources
@@ -20,5 +20,5 @@ Then, select the theme in Obsidian's settings.
 
 
 ## Next Steps
-- [ ] Publish to Obsidian Theme Gallery
+- [ ] Publish to Geist Theme Gallery
 
