@@ -886,10 +886,6 @@ settings:
 	  opacity: 0.6;
 	}
 
-	.external-link {
-	  padding: 0;
-	}
-
 	.internal-link {
 	  color: var(--text-accent);
 	  text-decoration: none;
