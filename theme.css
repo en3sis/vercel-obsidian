@@ -47,6 +47,7 @@
     --background-2: var(--vercel-gray-200); /* Secondary background */
     --background-3: var(--vercel-gray-300); /* Active background */
     --pre-code-bg: var(--vercel-gray-200); /* Code block background */
+    --inline-code-bg: var(--vercel-gray-200); /* Inline code background */
     
     /* Borders */
     --border-1: var(--vercel-gray-200); /* Default border */
@@ -73,6 +74,7 @@
     --background-2: var(--vercel-gray-900); /* Secondary background */
     --background-3: var(--vercel-gray-800); /* Active background */
     --pre-code: var(--vercel-gray-500); /* Code block background */
+    --inline-code-bg: var(--vercel-gray-800); /* Inline code background */
     
     /* Borders */
     --border-1: var(--vercel-gray-700); /* Default border */
@@ -85,6 +87,7 @@
     --text-accent: var(--vercel-blue-500); /* Accent text */
     --link-color: var(--vercel-blue-500);
     --link-color-hover: var(--vercel-blue-600);
+    --link-external-color: var(--vercel-gray-400); /* External link color */
     
     /* Highlights */
     --highlight-low: var(--vercel-gray-800);
@@ -547,7 +550,7 @@ settings:
 	/* font-size of in-line block for preview */
 	.markdown-preview-view code {
 	  font-size: var(--font-size-code);
-	  background-color: var(--background-3);
+	  background-color: var(--inline-code-bg);
 	  border-radius: 3px;
 	  padding: 2px 4px;
 	}
@@ -597,8 +600,13 @@ settings:
 	}
 
     .modal {
-        border: none
+        border: none;
     }
+
+	.modal-bg {
+	    background-color: var(--vercel-gray-800) !important;
+	    opacity: 0.8;
+	}
 
 	.table {
 	  padding: 4px;
@@ -810,7 +818,7 @@ settings:
 	.cm-s-obsidian span.cm-inline-code,
 	.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
 	.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
-	  background-color: var(--background-3);
+	  background-color: var(--inline-code-bg);
 	  color: var(--inline-code) !important;
 	  padding: 0.1em 0.2em;
 	  border-radius: 3px;
@@ -864,8 +872,13 @@ settings:
 
 	.cm-s-obsidian span.cm-link,
 	.cm-s-obsidian span.cm-hmd-internal-link {
-	  color: var(--text-accent);
+	  color: var(--vercel-blue-500);
 	  text-decoration: none;
+	}
+
+	.cm-s-obsidian span.cm-link:hover,
+	.cm-s-obsidian span.cm-hmd-internal-link:hover {
+	  color: var(--vercel-blue-600);
 	}
 
 	.cm-s-obsidian span.cm-formatting-link {
@@ -1080,4 +1093,10 @@ body.is-focused .workspace-tabs.mod-top {
 
 a:not(.internal-link) {
   font-style: italic;
+}
+
+.cm-s-obsidian span.cm-formatting-link.cm-url,
+.cm-s-obsidian span.cm-url {
+    color: var(--link-external-color) !important;
+    opacity: 0.8;
 }
