@@ -13,9 +13,9 @@
   --font-size-h6: 16px;
   
   /* Font Families */
---font-family-editor: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
---font-family-preview: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
---font-family-monospace: "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; 
+  --font-family-editor: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-preview: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: "Geist Mono", "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace; 
 
   /* Vercel Color System - Grays */
   --vercel-gray-100: #ffffff;
@@ -40,115 +40,60 @@
   --vercel-blue-900: #00153d;
 }
 
-    /* Light Theme */
-    .theme-light {
-        /* Backgrounds */
-        --background-1: var(--vercel-gray-100); /* Default/primary background */
-        --background-2: var(--vercel-gray-200); /* Secondary background */
-        --background-3: var(--vercel-gray-300); /* Active background */
-        --pre-code-bg: var(--vercel-gray-200); /* Code block background */
-        
-        /* Borders */
-        --border-1: var(--vercel-gray-200); /* Default border */
-        --border-2: var(--vercel-gray-300); /* Hover border */
-        --border-3: var(--vercel-blue-600); /* Active border */
-        
-        /* Text */
-        --text-1: var(--vercel-gray-900); /* Primary text */
-        --text-2: var(--vercel-gray-600); /* Secondary text and icons */
-        --text-accent: var(--vercel-blue-600); /* Accent text */
-        
-        /* Highlights */
-        --highlight-low: var(--vercel-gray-200);
-        --highlight-med: var(--vercel-gray-300);
-        --highlight-high: var(--vercel-blue-300);
-    }
+/* Light Theme */
+.theme-light {
+    /* Backgrounds */
+    --background-1: var(--vercel-gray-100); /* Default/primary background */
+    --background-2: var(--vercel-gray-200); /* Secondary background */
+    --background-3: var(--vercel-gray-300); /* Active background */
+    --pre-code-bg: var(--vercel-gray-200); /* Code block background */
+    
+    /* Borders */
+    --border-1: var(--vercel-gray-200); /* Default border */
+    --border-2: var(--vercel-gray-300); /* Hover border */
+    --border-3: var(--vercel-blue-600); /* Active border */
+    
+    /* Text */
+    --text-1: var(--vercel-gray-900); /* Primary text */
+    --text-2: var(--vercel-gray-600); /* Secondary text and icons */
+    --text-accent: var(--vercel-blue-600); /* Accent text */
+    --link-color: var(--vercel-blue-600);
+    --link-color-hover: var(--vercel-blue-700);
+    
+    /* Highlights */
+    --highlight-low: var(--vercel-gray-200);
+    --highlight-med: var(--vercel-gray-300);
+    --highlight-high: var(--vercel-blue-300);
+}
 
-    /* Dark Theme (Default) */
-    .theme-dark {
-        /* Backgrounds */
-        --background-1: var(--vercel-gray-900); /* Default/primary background */
-        --background-2: var(--vercel-gray-800); /* Secondary background */
-        --background-3: var(--vercel-gray-700); /* Active background */
-        --pre-code: var(--vercel-gray-500); /* Code block background */
-        
-        /* Borders */
-        --border-1: var(--vercel-gray-700); /* Default border */
-        --border-2: var(--vercel-gray-600); /* Hover border */
-        --border-3: var(--vercel-blue-600); /* Active border */
-        
-        /* Text */
-        --text-1: var(--vercel-gray-100); /* Primary text */
-        --text-2: var(--vercel-gray-400); /* Secondary text and icons */
-        --text-accent: var(--vercel-blue-500); /* Accent text */
-        
-        /* Highlights */
-        --highlight-low: var(--vercel-gray-800);
-        --highlight-med: var(--vercel-gray-700);
-        --highlight-high: var(--vercel-gray-600);
-        
-        /* Accent Colors for UI elements like headings, links, etc. */
-        --accent-blue: var(--vercel-blue-500);
-
-    }
-
-    .theme-light,
-    .theme-dark {
-      /* Core UI components */
-      --background-primary: var(--background-1);
-      --background-primary-alt: var(--background-2);
-      --background-secondary: var(--background-2);
-      --background-secondary-alt: var(--background-3);
-      --background-accent: var(--accent-blue);
-      --background-modifier-border: var(--border-1);
-      --background-modifier-form-field: rgba(0, 0, 0, 0.1);
-      --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
-      --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
-      --background-modifier-success: var(--vercel-blue-600);
-      --background-modifier-error: #ff0000;
-      --background-modifier-error-hover: #ff3333;
-      --background-modifier-cover: rgba(0, 0, 0, 0.4);
-      
-      /* Text colors */
-      --text-normal: var(--text-1);
-      --text-muted: var(--text-2);
-      --text-faint: var(--text-2);
-      --text-accent: var(--text-accent);
-      --text-accent-hover: var(--vercel-blue-600);
-      --text-on-accent: #ffffff;
-      --text-highlight-bg: var(--vercel-blue-300);
-      --text-error: #ff0000;
-      --text-error-hover: #ff3333;
-      --text-selection: rgba(77, 139, 249, 0.3);
-      
-      /* Interactive elements */
-      --interactive-normal: var(--background-2);
-      --interactive-hover: var(--highlight-low);
-      --interactive-accent: var(--accent-blue);
-      --interactive-accent-active: var(--vercel-blue-600);
-      --interactive-accent-hover: var(--vercel-blue-500);
-      
-      /* Scrollbars */
-      --scrollbar-bg: transparent;
-      --scrollbar-thumb-bg: var(--border-1);
-      --scrollbar-active-thumb-bg: var(--border-2);
-      
-      /* Headings */
-      --heading-color-h1: var(--vercel-blue-500);
-      --heading-color-h2: var(--vercel-blue-600);
-      --heading-color-h3: var(--text-1);
-      --heading-color-h4: var(--text-1);
-      --heading-color-h5: var(--text-1);
-      --heading-color-h6: var(--text-2);
-      
-      /* Code and quotes */
-      --inline-code: var(--vercel-blue-600);
-      --code-block: var(--text-1);
-      --pre-code: var(--background-2);
-      --blockquote-border: var(--vercel-blue-600);
-      --vim-cursor: var(--vercel-blue-600);
-      --border-color: var(--border-1);
-    }
+/* Dark Theme (Default) */
+.theme-dark {
+    /* Backgrounds */
+    --background-1: var(--vercel-gray-900); /* Default/primary background */
+    --background-2: var(--vercel-gray-900); /* Secondary background */
+    --background-3: var(--vercel-gray-800); /* Active background */
+    --pre-code: var(--vercel-gray-500); /* Code block background */
+    
+    /* Borders */
+    --border-1: var(--vercel-gray-700); /* Default border */
+    --border-2: var(--vercel-gray-600); /* Hover border */
+    --border-3: var(--vercel-blue-600); /* Active border */
+    
+    /* Text */
+    --text-1: var(--vercel-gray-100); /* Primary text */
+    --text-2: var(--vercel-gray-400); /* Secondary text and icons */
+    --text-accent: var(--vercel-blue-500); /* Accent text */
+    --link-color: var(--vercel-blue-500);
+    --link-color-hover: var(--vercel-blue-600);
+    
+    /* Highlights */
+    --highlight-low: var(--vercel-gray-800);
+    --highlight-med: var(--vercel-gray-700);
+    --highlight-high: var(--vercel-gray-600);
+    
+    /* Accent Colors for UI elements like headings, links, etc. */
+    --accent-blue: var(--vercel-blue-500);
+}
 
 /* @settings
 name: Vercel Theme
@@ -306,7 +251,7 @@ settings:
 .vercel-dark {
     /* Explicitly set dark theme variables */
     --background-1: var(--vercel-gray-900);
-    --background-2: var(--vercel-gray-800);
+    --background-2: var(--vercel-gray-900);
     --background-3: var(--vercel-gray-700);
     --text-1: var(--vercel-gray-100);
     --text-2: var(--vercel-gray-400);
@@ -404,10 +349,6 @@ settings:
 
 	.cm-s-obsidian span.cm-string {
 	  color: var(--text-accent-hover) !important;
-	}
-
-    a:not(.internal-link) {
-	  font-style: italic;
 	}
 
 
@@ -572,21 +513,33 @@ settings:
 	  letter-spacing: 0.5px;
 	}
 
+	/* Editor CodeBlock TEXT Appearance */
+	.cm-s-obsidian pre.HyperMD-codeblock {
+	  font-size: var(--font-size-code) !important;
+	  padding: 1px !important;
+	  display: block;
+	  color: var(--code-block) !important;
+	  font-weight: 500;
+	  text-indent: 0px !important;
+	  background-color: var(--background-3);
+	  border-radius: 4px;
+	}
+
 	/* code blocks in preview */
 	pre code {
-	  font-family: var(--font-family-monospace) !important;
 	  font-size: var(--font-size-code) !important;
 	  padding: 12px !important;
 	  line-height: 1.5;
 	  display: block;
 	  color: var(--code-block) !important;
 	  border-radius: 4px;
+	  background-color: var(--background-3);
 	}
 
 	/* padding of code blocks in preview */
 	.markdown-preview-view pre {
 	  padding: 0 !important;
-	  background-color: var(--background-2);
+	  background-color: var(--background-3);
 	  border-radius: 4px;
 	  border: 1px solid var(--border-1);
 	}
@@ -594,8 +547,7 @@ settings:
 	/* font-size of in-line block for preview */
 	.markdown-preview-view code {
 	  font-size: var(--font-size-code);
-	  font-family: var(--font-family-monospace);
-	  background-color: var(--background-2);
+	  background-color: var(--background-3);
 	  border-radius: 3px;
 	  padding: 2px 4px;
 	}
@@ -858,20 +810,10 @@ settings:
 	.cm-s-obsidian span.cm-inline-code,
 	.cm-s-obsidian span.cm-inline-code.cm-hmd-indented-code,
 	.cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code) {
-	  background-color: var(--pre-code-bg);
+	  background-color: var(--background-3);
 	  color: var(--inline-code) !important;
-	  bottom: 0px !important;
-	}
-
-	/* Editor CodeBlock TEXT Appearance */
-	.cm-s-obsidian pre.HyperMD-codeblock {
-	  font-family: var(--font-family-monospace) !important;
-	  font-size: var(--font-size-code) !important;
-	  padding: 1px !important;
-	  display: block;
-	  color: var(--code-block) !important;
-	  font-weight: 500;
-	  text-indent: 0px !important;
+	  padding: 0.1em 0.2em;
+	  border-radius: 3px;
 	}
 
 	.HyperMD-codeblock-bg {
@@ -886,7 +828,6 @@ settings:
 	code {
 	  color: var(--inline-code) !important;
 	  bottom: 0px !important;
-	  color:
 	}
 
 	.graph-view.color-arrow {
@@ -1052,7 +993,91 @@ input[type=checkbox]:checked, .cm-formatting-task.cm-property {
 	  width: 100%;
 	}
 
-	body {
-	  background: var(--background-1);
-	  color: var(--text-1);
-	}
+body {
+  background: var(--background-1);
+  color: var(--text-1);
+}
+
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: #000000;
+  background-color: var(--tab-container-background);
+}
+
+.theme-light,
+.theme-dark {
+  /* Core UI components */
+  --background-primary: var(--background-1);
+  --background-primary-alt: var(--background-2);
+  --background-secondary: var(--background-2);
+  --background-secondary-alt: var(--background-3);
+  --background-accent: var(--accent-blue);
+  --background-modifier-border: var(--border-1);
+  --background-modifier-form-field: rgba(0, 0, 0, 0.1);
+  --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.2);
+  --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
+  --background-modifier-success: var(--vercel-blue-600);
+  --background-modifier-error: #ff0000;
+  --background-modifier-error-hover: #ff3333;
+  --background-modifier-cover: rgba(0, 0, 0, 0.4);
+  
+  /* Titlebar */
+  --titlebar-background: var(--background-1);
+  --titlebar-background-focused: var(--background-2);
+  
+  /* Text colors */
+  --text-normal: var(--text-1);
+  --text-muted: var(--text-2);
+  --text-faint: var(--text-2);
+  --text-accent: var(--text-accent);
+  --text-accent-hover: var(--link-color-hover);
+  --text-on-accent: #ffffff;
+  --text-highlight-bg: var(--vercel-blue-300);
+  --text-error: #ff0000;
+  --text-error-hover: #ff3333;
+  --text-selection: rgba(77, 139, 249, 0.3);
+  
+  /* Interactive elements */
+  --interactive-normal: var(--background-2);
+  --interactive-hover: var(--highlight-low);
+  --interactive-accent: var(--accent-blue);
+  --interactive-accent-active: var(--vercel-blue-600);
+  --interactive-accent-hover: var(--vercel-blue-500);
+  
+  /* Scrollbars */
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--border-1);
+  --scrollbar-active-thumb-bg: var(--border-2);
+  
+  /* Headings */
+  --heading-color-h1: var(--vercel-blue-500);
+  --heading-color-h2: var(--vercel-blue-600);
+  --heading-color-h3: var(--text-1);
+  --heading-color-h4: var(--text-1);
+  --heading-color-h5: var(--text-1);
+  --heading-color-h6: var(--text-2);
+  
+  /* Code and quotes */
+  --inline-code: var(--vercel-blue-600);
+  --code-block: var(--text-1);
+  --pre-code: var(--background-2);
+  --blockquote-border: var(--vercel-blue-600);
+  --vim-cursor: var(--vercel-blue-600);
+  --border-color: var(--border-1);
+}
+
+body.is-focused .titlebar,
+body.is-focused .workspace-ribbon.mod-left {
+  --titlebar-background: var(--background-2);
+  background-color: var(--titlebar-background);
+}
+
+body.is-focused .sidebar-toggle-button,
+body.is-focused .workspace-tabs.mod-top {
+  --tab-container-background: var(--background-2);
+  background-color: var(--tab-container-background);
+}
+
+a:not(.internal-link) {
+  font-style: italic;
+}
